@@ -21,6 +21,7 @@ filetype_dict = {}
 # Check if file type is already in the dictionary, if not, create a new folder for that file type
 for file in files:
     filetype = file.split('.')[1]
+    new_folder_name = ''
 
     if filetype not in filetype_dict:
         file_list.append(filetype)
