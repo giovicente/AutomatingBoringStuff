@@ -36,7 +36,7 @@ for file in files:
 i = 1
 
 # Move the files to the respective folders
-# Surround duplicate fil exception with a try-except block
+# Surround duplicate file exception with a try-except block
 for file in files:
     try:
         src_path = file_path + '/' + file
