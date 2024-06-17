@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 # Load path to the downloads directory from the environment file
 load_dotenv()
-file_path = os.getenv("DOWNLOADS_FOLDER_PATH")
+file_path = os.getenv('DOWNLOADS_FOLDER_PATH')
 # Iterate and get all files in the directory and add them to a list named 'files'
 files = [f for f in listdir(file_path) if isfile(join(file_path, f))]
 
