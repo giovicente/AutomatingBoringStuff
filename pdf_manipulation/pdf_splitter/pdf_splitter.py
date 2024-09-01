@@ -2,7 +2,9 @@ from PyPDF2 import PdfReader, PdfWriter
 import os
 
 
-def split_pdf(pdf_path, page_number, folder_path):
+def split_pdf(pdf_path, folder_path):
+    page_number = 0
+
     with open(pdf_path, 'rb') as pdf_file:
         reader = PdfReader(pdf_file)
 

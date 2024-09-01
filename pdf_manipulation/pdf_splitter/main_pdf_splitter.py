@@ -8,9 +8,8 @@ def main():
 
     pdf_filename = os.getenv('PDF_NAME')
     pdf_path = os.path.join(folder_path, pdf_filename)
-    page_number = 0
 
-    split_pdf(pdf_path, page_number, folder_path)
+    split_pdf(pdf_path, folder_path)
 
 
 def get_folder_path():
